@@ -1,0 +1,74 @@
+id
+By.id("user-name");
+By.id("password");
+By.id("login-button");
+
+name
+By.name("login-button")
+
+classname
+ By.className("product_sort_container");
+ By.className("shopping_cart_link");
+ By.className("shopping_cart_badge");
+ By.className("inventory_item_name");
+ By.className("inventory_item_desc");
+ By.className("inventory_item_price");
+
+tagname
+By.tagName("select")
+
+linktext
+By.linkText("Sauce Labs Backpack");
+
+partiallinktext
+By.partialLinkText("Sauce Labs");
+
+
+xpath
+
+By.xpath("//button[contains(text(),'Add to cart')]");
+By.xpath("//input[@value='Continue']")
+By.xpath("//a[contains(text(),'Finish')]");
+By.xpath("//option[contains(text(),'Price (low to high)')]"
+By.xpath("//option[contains(text(),'Price (high to low)')]");
+By.xpath("//option[contains(text(),'Name (A to Z)')]");
+By.xpath("//option[contains(text(),'Name (Z to A)')]")
+
+  Поиск по атрибуту,
+  By.xpath("//input[@id='user-name']");
+
+  Поиск по тексту
+  By.xpath("//div[text() = 'Sauce Labs Backpack']");
+
+  Поиск по частичному совпадению атрибута
+  By.xpath("//button[contains(@id, "backpack")]");
+
+  Поиск по частичному совпадению текста
+  By.xpath("//div[contains(text(), "Backpack")]");
+
+  ancestor
+  By.xpath("//*[text()='Sauce Labs Backpack']//ancestor::div");
+
+  descendant
+  By.xpath("//div[@class='inventory_item']//descendant::button");
+
+  following
+  By.xpath("//button[text()='REMOVE']//following::div");
+
+  parent
+  By.xpath("//button[text()='REMOVE']//parent::div");
+
+  preceding
+  By.xpath("//button[text()='REMOVE']//preceding::div");
+
+
+  css
+By.cssSelector("[data-test='error']");
+By.cssSelector(".product_sort_container");
+By.cssSelector(".inventory_item");
+By.cssSelector(".btn_inventory");
+By.cssSelector(".shopping_cart_container");
+By.cssSelector(".shopping_cart_badge");
+By.cssSelector(".cart_item_label a");
+By.cssSelector(".cart_item_label .inventory_item_desc");
+
